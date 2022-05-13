@@ -46,3 +46,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+let buttonboy = document.querySelector('.clickme')
+
+
+buttonboy.addEventListener('click', ()=>location.replace('./original.html'))

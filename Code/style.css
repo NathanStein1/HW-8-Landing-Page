@@ -239,7 +239,16 @@ p {
     font-size: x-large;
     color: rgb(1, 1, 1);
     position: absolute;
+    
+
+}
+.labelG {
+    max-width: fit-content;
+    font-weight: 900;
+    font-size: x-large;
     color: white;
+    position: absolute;
+    
 
 }
 
@@ -255,12 +264,17 @@ p {
 
 
 .sub1 {
-    background-image: url('/Images/selfie.jpeg');
+    background-image: url('/Images/Sched.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 400px;
     height: 300px;
     margin: 20px;
+    
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .sub1:hover {
@@ -271,12 +285,16 @@ p {
 }
 
 .sub2 {
-    background-image: url('/Images/codeimg.jpg');
+    background-image: url('/Images/quizpic.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 400px;
     height: 300px;
     margin: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .sub2:hover {
@@ -287,12 +305,16 @@ p {
 }
 
 .sub3 {
-    background-image: url('/Images/surfboard.jpg');
+    background-image: url('/Images/Pricepic.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 400px;
     height: 300px;
     margin: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .sub3:hover {
@@ -303,12 +325,16 @@ p {
 }
 
 .sub4 {
-    background-image: url('/Images/mountain.jpg');
+    background-image: url('/Images/weather (2).png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 400px;
     height: 300px;
     margin: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .sub4:hover {
@@ -356,7 +382,64 @@ p {
 
 
 
-.draggable {
+
+
+.formP {
+    padding: 40px;
+}
+
+.divide{
+    display: flex;
+    justify-content: center;
+}
+
+.bigBlock {
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
+.modal {
+    display: none; 
+    position: absolute; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+ 
+  .modal-ccontent {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    
+  }
+
+
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* .draggable {
 
     width: 400px;
     height: 300px;
@@ -411,59 +494,4 @@ p {
 	
 	padding: 10px;
 }
-
-
-
-.formP {
-    padding: 40px;
-}
-
-.divide{
-    display: flex;
-    justify-content: center;
-}
-
-.bigBlock {
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-}
-
-
-
-.modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }
-  
-  /* Modal Content/Box */
-  .modal-ccontent {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 75%;
-    
-  }
-
-
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+ */

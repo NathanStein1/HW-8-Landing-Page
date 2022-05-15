@@ -1,29 +1,7 @@
-// const containers = document.querySelectorAll('.block')
-
-// const droppable = new Draggable.Swappable(containers, {
-//   draggable: '.draggable',
-//   droppable: '.droppable',
-//   swappable: '.swappable',
-// });
-
-// let item1 = document.querySelector('.self')
-
-// item1.addEventListener("dblclick", function(event) {
-//     // Prevent defualt action of event:
-//     event.preventDefault();
-  
-//     // Do your extra stuff here...
-   
-//     location.hash = event.target.getAttribute('href').substr(1);
-//   })
 
 
 let modal = document.querySelector('.modal')
 let conB = document.querySelector('.conB')
-
-// conB.addEventListener('click', function () {
-//     modal.trigger('focus')
-//   })
 
 
 
@@ -48,8 +26,27 @@ window.onclick = function(event) {
 }
 
 
+// EVENT LISTENER FOR WORK AND ABOUT ME SECTION
 
-let buttonboy = document.querySelector('.clickme')
+let about = document.querySelector('.aboot')
+let work = document.querySelector('.werk')
+let gallery = document.querySelector('.gallery')
+let footer = document.querySelector('.footy')
+let wrap = document.querySelector('.wrapper')
 
 
-buttonboy.addEventListener('click', ()=>location.replace('./original.html'))
+
+about.addEventListener('click', function(){
+gallery.classList.add('hide')
+
+if (wrap.classList.contains('hide')){
+  wrap.classList.remove('hide')
+
+}
+})
+
+work.addEventListener('click', function(){
+gallery.classList.remove('hide')
+wrap.classList.add('hide')
+
+})

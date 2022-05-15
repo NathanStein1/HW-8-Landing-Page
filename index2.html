@@ -8,17 +8,20 @@
   <title>Bootstrap version</title>
   <link rel="stylesheet" href="./Code/reset.css">
   <link rel="stylesheet" type="text/css" href="./Code/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.2/lib/draggable.min.js"></script>
-  <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
 
 </head>
 
 <body>
+
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
     <div class="container-fluid">
       <a class="navbar-brand" id="title">Steins Designs</a>
@@ -31,41 +34,44 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#about">About
+              <a class="nav-link active aboot" href="#about">About
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
+              <a class="nav-link werk" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn conB" data-toggle="modal" data-target="#exampleModal">Contact Me</a>
+              <a class="nav-link conB" data-toggle="modal" data-target="#exampleModal">Contact Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./Nathan Stein 2022 RESUME (1).pdf">Resume</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Links</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">GitHub</a>
-                <a class="dropdown-item" href="#">LinkedIn</a>
-                <a class="dropdown-item" href="#">Wikipedia</a>
-              </div>
             </li>
           </ul>
 
         </div>
       </div>
   </nav>
-  <div class="hero heroimg">
-    <div class="welcomemessage">
 
-    </div>
+  <div class="gallery hide">
+    <div class="item1 positionitem1"></div>
+    <a href="https://nathanstein1.github.io/Quiz-Javascript-Project/" class="item2 positionitem2">
+      <div class="label"></div>
+    </a>
+    <a href="https://nathanstein1.github.io/Price-Search/" class="item3 positionitem3">
+      <div class="label"></div>
+    </a>
+    <a href="https://nathanstein1.github.io/Weather-App/" class="item4 positionitem4">
+      <div class="label"></div>
+    </a>
+    <a href="https://github.com/NathanStein1" class="item5 positionitem5">
+      <div class="labelG">GitHub</div></a>
+    <a href="https://nathanstein1.github.io/Schedule-Project/" class="item6 positionitem6">
+      <div class="label"></div>
+    </a>
   </div>
 
-
-
+<!-- CONTACT FORM -->
   <div id="myModal" class="modal">
     <div class="modal-ccontent">
       <span class="close">&times;</span>
@@ -88,98 +94,79 @@
         </fieldset>
       </form>
     </div>
-  
+
   </div>
 
+<!-- CONTACT FORM END -->
 
 
-
-
-
+<!-- ABOUT ME  -->
   <main class="wrapper">
     <div id="about">
-      <aside>About Me</aside>
+      <div class="boxer"><aside></aside></div>
       <p>Hello and Welcome! My name is Nate and I am a programmer. Here I will update my projects and share what I have
         come up with!
       </p>
-      <div class="selfPic"></div>
+  
     </div>
-
-    <div id="work">
-      <aside>Work</aside>
-
-      <div class="projects">
-        <div class="bigcontainer">
-          <a href="https://github.com/NathanStein1" class="bigproj">
-            <div class="labelG">GitHub</div>
-
-        </div></a>
-
-
-
-        <div class="subproject">
-          <a href="https://nathanstein1.github.io/Schedule-Project/" class="sub1">
-            <div class="label">Schedule App</div>
-          </a>
-          <a href="https://nathanstein1.github.io/Quiz-Javascript-Project/" class="sub2">
-            <div class="label">Code Quiz</div>
-          </a>
-          <a href="https://nathanstein1.github.io/Price-Search/" class="sub3">
-            <div class="label">Price Search</div>
-          </a>
-          <a href="https://nathanstein1.github.io/Weather-App/" class="sub4">
-            <div class="label">Weather-App</div>
-          </a>
-
-        </div>
-      </div>
-    </div>
-
   </main>
+<!-- ABOUT ME END -->
 
-  <button class="clickme">CLICK ME</button>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-  crossorigin="anonymous"></script>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white footy fixed-bottom">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="./index2.html">SteinsDesigns.com</a>
+  </div>
+  
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
   <script src="./Code/script.js"></script>
-
 </body>
 
 </html>
 
-
-
-
-
-<!-- <div class="subproject">
-  <div class="block">
-    <div class="droppable" >
-      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event" class="draggable self swappable">sdf</a>
-      
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="droppable">
-      <div class="draggable mountain swappable">Mountain</div>
-    </div>
-  </div>
-  <div class="block">
-    <div class="droppable">
-      <div class="draggable codepic swappable">CODE</div>
-    </div>
-  </div>
-  <div class="block">
-    <div class="droppable">
-      <div class="draggable surf swappable">SURF</div>
-    </div>
-  </div>
-  <div class="block zone">
-    <div class="droppable bigBlock swappable">DROP PROJECT</div>
-  </div>
-  
-</div>
-  
-</div>
-</div>
-</div> -->

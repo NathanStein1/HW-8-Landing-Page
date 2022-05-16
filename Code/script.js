@@ -1,8 +1,11 @@
 // import Swup from 'swup'
 const swup = new Swup()
 
+// Need to fix the white space, using preload breaks animation?
 
-
+// const swup = new Swup({
+//   plugins: [new SwupPreloadPlugin()]
+// });
 // CODE FOR MODAL
 let modal = document.querySelector('.modal')
 let conB = document.querySelector('.conB')

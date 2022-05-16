@@ -49,7 +49,12 @@ a {
 
 p {
     font-family: monospace;
+    display: block;
+
 }
+
+
+
 li:hover {
     
     cursor: pointer;
@@ -70,6 +75,7 @@ li:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+
     
 
     

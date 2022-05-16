@@ -53,3 +53,4 @@ footer.classList.remove('fixed-bottom')
 footer.classList.add('bottom')
 
 })
+

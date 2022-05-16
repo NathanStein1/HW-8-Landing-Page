@@ -38,7 +38,8 @@ let wrap = document.querySelector('.wrapper')
 
 about.addEventListener('click', function(){
 gallery.classList.add('hide')
-
+footer.classList.remove('bottom')
+footer.classList.add('fixed-bottom')
 if (wrap.classList.contains('hide')){
   wrap.classList.remove('hide')
 
@@ -48,5 +49,7 @@ if (wrap.classList.contains('hide')){
 work.addEventListener('click', function(){
 gallery.classList.remove('hide')
 wrap.classList.add('hide')
+footer.classList.remove('fixed-bottom')
+footer.classList.add('bottom')
 
 })

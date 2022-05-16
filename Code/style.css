@@ -15,7 +15,9 @@ body {
     align-items: flex-end;
 }
 
-
+main {
+    background-color: #DEDEF1;
+}
 
 
 #title {
@@ -126,11 +128,19 @@ li:hover {
     align-items: center;
     position: relative;
     padding: 20px;
-
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceP;
+    animation-name: bounceP;
+    animation-delay: none;
 
 
 
 }
+
+
 
 .boxer {
     padding: 20px;
@@ -393,7 +403,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 0px;
+    grid-gap: 10px;
     background-color: #DEDEF1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -406,13 +416,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-size: cover;
     background-position: center;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    animation-delay: 75ms;
+    animation-delay: 350ms;
 
 }
 
@@ -423,13 +433,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    animation-delay: 200ms;
+    animation-delay: 350ms;
 
 
 
@@ -443,8 +453,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-size: cover;
     background-position: center;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
@@ -459,13 +469,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    animation-delay: 500ms;
+    animation-delay: 450ms;
 }
 
 
@@ -477,13 +487,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-position: center;
     background-color: black;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    animation-delay: 450ms;
+    animation-delay: 550ms;
 }
 
 
@@ -493,13 +503,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    animation-delay: 650ms;
+    /* animation-delay: 825ms; */
+    animation-delay: 550ms;
+    
 }
 
 
@@ -512,6 +524,56 @@ only screen and (min-device-pixel-ratio : 1.5) {
     text-decoration: none;
 }
 
+.snapper {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceSnap;
+    animation-name: bounceSnap;
+    animation-delay: none;
+}
+
+
+
+@keyframes bounceSnap {
+
+    0%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0);
+        
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounceSnap {
+
+    0%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
 @-webkit-keyframes bounce {
 
     0%,
@@ -522,11 +584,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
 
     40% {
-        -webkit-transform: translateY(-30px);
+        -webkit-transform: translateY(-20px);
     }
 
     60% {
-        -webkit-transform: translateY(-15px);
+        -webkit-transform: translateY(-10px);
     }
 }
 
@@ -540,11 +602,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
 
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
 
     60% {
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
 }
 
@@ -621,14 +683,14 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .transition-fade {
     opacity: 1;
     transition: 500ms;
-    transform: translateX(0);
-    transform-origin: left;
+    transform: translateY(0);
+    transform-origin: bottom;
     background-color: #DEDEF1;
 }
 
 html.is-animating .transition-fade {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
     background-color: #DEDEF1;
 
 }

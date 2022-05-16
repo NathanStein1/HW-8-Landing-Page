@@ -701,6 +701,12 @@ html.is-leaving .transition-fade {
 
 }
 
+
+html.is-changing {
+    background-color: #DEDEF1;
+}
+
+/* FOOTER */
 .foot {
 
     position: absolute;

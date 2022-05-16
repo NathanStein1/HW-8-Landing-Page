@@ -1,9 +1,15 @@
+:root {
+    background-color: #DEDEF1;
+}
+
 html {
     background-color: #DEDEF1;
 }
+
 body {
     background-color: #DEDEF1;
 }
+
 .push {
     display: flex;
     align-items: flex-end;
@@ -22,7 +28,8 @@ body {
     flex-wrap: wrap;
 
 }
-@media screen and (max-width: 560px){
+
+@media screen and (max-width: 560px) {
     #title {
         font-size: 40px;
     }
@@ -44,19 +51,62 @@ li {
 a {
     text-decoration: none;
     color: aliceblue;
-    
+
 }
 
 p {
     font-family: monospace;
     display: block;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceP;
+    animation-name: bounceP;
+    animation-delay: 75ms;
+    
 
+}
+
+
+@keyframes bounceP {
+
+    0%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0);
+        
+    }
+
+    0% {
+        letter-spacing: -.8px;
+        
+    }
+    20%,
+    50%,
+    80%,
+    100% {
+        letter-spacing: 3px;
+        
+    }
+
+
+
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 
 
 li:hover {
-    
+
     cursor: pointer;
 
 }
@@ -75,10 +125,11 @@ li:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px;
 
-    
 
-    
+
+
 }
 
 .boxer {
@@ -96,9 +147,11 @@ li:hover {
 
 }
 
+
+
 .aside {
 
-    
+
     border: 2px;
     width: 214px;
     height: 234px;
@@ -107,9 +160,169 @@ li:hover {
     background-image: url('/Images/selfie.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    .wrapper {
+        padding-top: 45px;
+    }
+
+    .aside {
+        width: 214px;
+        height: 234px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .boxerP {
+        padding: 12px;
+    }
+
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .wrapper {
+        padding-top: 200px;
+    }
+
+    .aside {
+        width: 374px;
+        height: 411px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
+
 
 
 
@@ -119,7 +332,7 @@ li:hover {
     padding: 40px;
 }
 
-.divide{
+.divide {
     display: flex;
     justify-content: center;
 }
@@ -133,48 +346,50 @@ li:hover {
 
 
 .modal {
-    display: none; 
-    position: absolute; 
-    z-index: 1; 
+    display: none;
+    position: absolute;
+    z-index: 1;
     left: 0;
     top: 0;
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }
-  
- 
-  .modal-ccontent {
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-ccontent {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 75%;
-    
-  }
+    font-family: monospace;
+
+}
 
 
 
-  .close {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
 /* END OF MODAL */
 
 
 
 
 /* PROJECT GRID */
-  .gallery {
+.gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
@@ -182,7 +397,7 @@ li:hover {
     background-color: #DEDEF1;
     padding-top: 20px;
     padding-bottom: 20px;
-    
+
 }
 
 .item1 {
@@ -191,29 +406,50 @@ li:hover {
     background-size: cover;
     background-position: center;
     transition: transform 250ms;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 75ms;
 
 }
 
 
 
-.item2{
+.item2 {
     background-image: url('/Images/codeimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
-    
-    
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 200ms;
+
+
 
 }
 
 
 
-.item3{
+.item3 {
     background-image: url('/Images/Pricepic.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     transition: transform 250ms;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 400ms;
 
 }
 
@@ -223,6 +459,13 @@ li:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 500ms;
 }
 
 
@@ -234,6 +477,13 @@ li:hover {
     background-position: center;
     background-color: black;
     transition: transform 250ms;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 450ms;
 }
 
 
@@ -243,6 +493,13 @@ li:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-delay: 650ms;
 }
 
 
@@ -251,8 +508,44 @@ li:hover {
     transform: translateY(-10px);
     border: 1px;
     border-style: solid;
-    transition: all 0.5s ease-in-out;
+    transition: all .2s ease-in-out;
     text-decoration: none;
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 .positionitem1 {
@@ -262,35 +555,35 @@ li:hover {
     grid-row-end: 3;
 }
 
-.positionitem2{
+.positionitem2 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.positionitem3{
+.positionitem3 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 6;
 }
 
-.positionitem4{
+.positionitem4 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 6;
 }
 
-.positionitem5{
+.positionitem5 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 9;
 }
 
-.positionitem6{
+.positionitem6 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
@@ -306,16 +599,17 @@ li:hover {
     font-size: 1.5em;
     color: rgb(1, 1, 1);
     position: absolute;
-    
+
 
 }
+
 .labelG {
     max-width: fit-content;
     font-weight: 900;
     font-size: 1.5em;
     color: white;
     position: absolute;
-    
+
 
 }
 
@@ -332,29 +626,29 @@ li:hover {
     background-color: #DEDEF1;
 }
 
-html.is-animating .transition-fade{
+html.is-animating .transition-fade {
     opacity: 0;
     transform: translateX(100%);
     background-color: #DEDEF1;
 
 }
 
-html.is-leaving .transition-fade{
+html.is-leaving .transition-fade {
     opacity: 0;
     background-color: #DEDEF1;
 
 }
 
 .foot {
-    
-        position:absolute;
-        bottom:0;
-        width:100%;
-        height:60px;
-        display: flex;
-        justify-content: center;
-        
-     
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .links {

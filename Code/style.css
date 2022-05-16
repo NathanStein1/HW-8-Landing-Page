@@ -40,7 +40,9 @@ a {
     text-decoration: none;
     color: aliceblue;
 }
-
+p {
+    font-family: monospace;
+}
 li:hover {
     
     cursor: pointer;
@@ -152,7 +154,7 @@ li:hover {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-gap: 0px;
     background-color: #DEDEF1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -172,7 +174,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 
@@ -191,7 +193,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 .item3{
@@ -207,7 +209,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 .item4 {
@@ -222,7 +224,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 .item5 {
@@ -239,7 +241,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 .item6 {
@@ -254,7 +256,7 @@ li:hover {
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    opacity: .8;
+    
 }
 
 

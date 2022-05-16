@@ -54,3 +54,9 @@ footer.classList.add('bottom')
 
 })
 
+// On hover, set opacity to .8 in css. hover item1, event listener('hover'). .style.opacity = .8;
+
+// Swup up gallary and model as well as header and footer. swup up about and modal as well as header and footer. Fix footer
+// two html pages
+
+// Refactor hovers by adding a class called item, .item:hover will encompass all hover effects. item.addeventlistener('hover', function(){remove.class item, replace class itemCurrent})

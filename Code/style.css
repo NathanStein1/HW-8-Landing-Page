@@ -341,15 +341,18 @@ li:hover {
     transition: 500ms;
     transform: translateX(0);
     transform-origin: left;
+    background-color: #DEDEF1;
 }
 
 html.is-animating .transition-fade{
     opacity: 0;
     transform: translateX(100%);
+    background-color: #DEDEF1;
 
 }
 
 html.is-leaving .transition-fade{
     opacity: 0;
+    background-color: #DEDEF1;
 
 }

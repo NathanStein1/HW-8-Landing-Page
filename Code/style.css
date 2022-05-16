@@ -1,11 +1,16 @@
 html {
     background-color: #DEDEF1;
 }
-
+body {
+    background-color: #DEDEF1;
+}
 .push {
     display: flex;
     align-items: flex-end;
 }
+
+
+
 
 #title {
     font-size: 75px;
@@ -39,7 +44,9 @@ li {
 a {
     text-decoration: none;
     color: aliceblue;
+    
 }
+
 p {
     font-family: monospace;
 }
@@ -60,15 +67,26 @@ li:hover {
     display: flex;
     flex-direction: column;
     background-color: #dedef1;
-    padding-top: 20px;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 
     
 }
 
 .boxer {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boxerP {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 557px;
 
 }
 
@@ -169,13 +187,7 @@ li:hover {
     transition: transform 250ms;
 
 }
-.item1:hover {
-    transform: translateY(-10px);
-    border: 1px;
-    border-style: solid;
-    transition: all 0.5s ease-in-out;
-    
-}
+
 
 
 .item2{
@@ -188,13 +200,7 @@ li:hover {
 
 }
 
-.item2:hover {
-    transform: translateY(-10px);
-    border: 1px;
-    border-style: solid;
-    transition: all 0.5s ease-in-out;
-    
-}
+
 
 .item3{
     background-image: url('/Images/Pricepic.png');
@@ -204,13 +210,7 @@ li:hover {
     transition: transform 250ms;
 
 }
-.item3:hover {
-    transform: translateY(-10px);
-    border: 1px;
-    border-style: solid;
-    transition: all 0.5s ease-in-out;
-    
-}
+
 
 .item4 {
     background-image: url('/Images/weather\ \(3\).png');
@@ -219,13 +219,7 @@ li:hover {
     transition: transform 250ms;
 }
 
-.item4:hover {
-    transform: translateY(-10px);
-    border: 1px;
-    border-style: solid;
-    transition: all 0.5s ease-in-out;
-    
-}
+
 
 .item5 {
     background-image: url('/Images/githubicon.jpg');
@@ -236,13 +230,7 @@ li:hover {
     transition: transform 250ms;
 }
 
-.item5:hover {
-    transform: translateY(-10px);
-    border: 1px;
-    border-style: solid;
-    transition: all 0.5s ease-in-out;
-    
-}
+
 
 .item6 {
     background-image: url('/Images/Sched\ \(2\).png');
@@ -251,14 +239,15 @@ li:hover {
     transition: transform 250ms;
 }
 
-.item6:hover {
+
+
+.item:hover {
     transform: translateY(-10px);
     border: 1px;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    
+    text-decoration: none;
 }
-
 
 .positionitem1 {
     grid-column-start: 1;
@@ -326,14 +315,7 @@ li:hover {
 
 /* END GRID */
 
-.hide {
-    display: none;
-}
-
-
-.footy {
-    bottom: 0;
-}
+/* TRANSITION */
 
 
 .transition-fade {
@@ -355,4 +337,21 @@ html.is-leaving .transition-fade{
     opacity: 0;
     background-color: #DEDEF1;
 
+}
+
+.foot {
+    
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:60px;
+        display: flex;
+        justify-content: center;
+        
+     
+}
+
+.links {
+    display: flex;
+    align-items: center;
 }

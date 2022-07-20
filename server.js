@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(express.static('public')); 
 
 app.get('/index', (req, res) => {
-    console.log(path.join(__dirname, '/public/index.html'));
-    res.sendFile(path.join(__dirname, '/public/index.html'));
+    console.log(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
   });
 
 

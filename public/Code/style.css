@@ -167,7 +167,7 @@ li:hover {
     height: 234px;
     display: flex;
     justify-content: center;
-    background-image: url('/Images/selfie.jpeg');
+    background-image: url('/public/Images/selfie.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -411,7 +411,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .item1 {
-    background-image: url('/Images/mountain.jpg');
+    background-image: url('/public/Images/mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -429,7 +429,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 .item2 {
-    background-image: url('/Images/codeimg.jpg');
+    background-image: url('/public/Images/codeimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
@@ -448,7 +448,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 .item3 {
-    background-image: url('/Images/Pricepic.png');
+    background-image: url('/public/Images/landing-screenshot.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -465,7 +465,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 .item4 {
-    background-image: url('/Images/weather\ \(3\).png');
+    background-image: url('/public/Images/weather\ \(3\).png');
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;
@@ -481,10 +481,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 .item5 {
-    background-image: url('/Images/githubicon.jpg');
+    background-image: url('/public/Images/Pricepic.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: top;
     background-color: black;
     transition: transform 250ms;
     -webkit-animation-duration: 2s;
@@ -499,7 +499,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 .item6 {
-    background-image: url('/Images/Sched\ \(2\).png');
+    background-image: url('/public/Images/Sched\ \(2\).png');
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 250ms;

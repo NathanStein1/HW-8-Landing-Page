@@ -32,7 +32,7 @@ window.onclick = function (event) {
   }
 }
 
-
+console.log(window)
 
 
 // On hover, set opacity to .8 in css. hover item1, event listener('hover'). .style.opacity = .8;

@@ -43,6 +43,11 @@ main {
 
 }
 
+.nav-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 li {
     padding: 10px;
     font-size: large;
@@ -50,11 +55,7 @@ li {
 
 }
 
-a {
-    text-decoration: none;
-    color: aliceblue;
 
-}
 
 p {
     font-family: monospace;
@@ -340,7 +341,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .formP {
     padding: 40px;
+    
 }
+
+
 
 .divide {
     display: flex;
@@ -375,7 +379,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     width: 75%;
     font-family: monospace;
 
+
 }
+
 
 
 
@@ -721,6 +727,13 @@ html.is-changing {
     align-items: center;
 }
 
+
+
+.external {
+    text-decoration: none;
+    color: black;
+
+}
 
 /* TO DO
 FIX THE FOOTER
